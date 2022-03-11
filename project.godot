@@ -16,6 +16,8 @@ instance_dock/scenes=[ {
 "scene": "res://scenes/Player.tscn"
 }, {
 "scene": "res://scenes/Fire Enemy.tscn"
+}, {
+"scene": "res://scenes/Mushroom Enemy.tscn"
 } ],
 "scroll": 0
 } ]

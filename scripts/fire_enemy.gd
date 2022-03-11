@@ -13,9 +13,9 @@ func _physics_process(delta: float) -> void:
 func _on_Jump_Timer_timeout() -> void:
 	vec.x -= 500
 	vec.y = -750
-	$"Jump Timer".wait_time = float(Global.get_random_number(0.8,1.5))
+	$"Jump Timer".wait_time = Global.get_random_number(1,1.5)
 func take_damage():
-	$hurtbox/CollisionShape2D.disabled = true
+	$hurtbox/CollisionShape2D.set_deferred("disabled",true)
 	$AnimationPlayer.play("die")
 
 

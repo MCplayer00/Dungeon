@@ -1,32 +1,41 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://srcs/Tile.png" type="Texture" id=1]
+[ext_resource path="res://scenes/auto generates/Flat.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 471.653, 132.375 )
+custom_solver_bias = 1.0
+extents = Vector2( 471, 133.925 )
 
-[node name="StaticBody2D" type="StaticBody2D"]
+[node name="Flat" type="StaticBody2D"]
+script = ExtResource( 2 )
 
 [node name="Tile" type="Sprite" parent="."]
-position = Vector2( 97.6309, 134.233 )
+position = Vector2( 97.6309, 130 )
 texture = ExtResource( 1 )
 
 [node name="Tile2" type="Sprite" parent="."]
-position = Vector2( 285.905, 134.233 )
+position = Vector2( 285.905, 130 )
 texture = ExtResource( 1 )
 
 [node name="Tile3" type="Sprite" parent="."]
-position = Vector2( 471.807, 134.233 )
+position = Vector2( 471.807, 130 )
 texture = ExtResource( 1 )
 
 [node name="Tile4" type="Sprite" parent="."]
-position = Vector2( 662.791, 134.233 )
+position = Vector2( 662.791, 130 )
 texture = ExtResource( 1 )
 
 [node name="Tile5" type="Sprite" parent="."]
-position = Vector2( 848.102, 134.233 )
+position = Vector2( 848.102, 130 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 472.732, 134.256 )
+position = Vector2( 472.732, 132.433 )
 shape = SubResource( 1 )
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 880, -70 )
+
+[node name="End" type="Position2D" parent="."]
+position = Vector2( 920.502, 1.75 )

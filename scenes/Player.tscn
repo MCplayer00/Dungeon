@@ -300,8 +300,7 @@ frames = SubResource( 50 )
 animation = "sword_1"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2( -1.3644, -1.0233 )
+position = Vector2( -1.47864, -1.70873 )
 shape = SubResource( 51 )
 
 [node name="Swordbox" type="Area2D" parent="."]

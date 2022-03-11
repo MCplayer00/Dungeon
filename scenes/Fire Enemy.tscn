@@ -37,7 +37,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 67.7398, 86.7511 )
+extents = Vector2( 67.7398, 102.495 )
 
 [sub_resource type="AtlasTexture" id=4]
 flags = 4
@@ -103,8 +103,7 @@ scale = Vector2( 0.325435, 0.325435 )
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2( -19.6518, 104.81 )
+position = Vector2( -17.8367, 96.9445 )
 shape = SubResource( 1 )
 
 [node name="Jump Timer" type="Timer" parent="."]
@@ -126,10 +125,9 @@ position = Vector2( -14.5816, -2.84518 )
 scale = Vector2( 11.0648, 13.4477 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 0, -0.990738 )
 frames = SubResource( 14 )
 animation = "Fire"
-frame = 5
+frame = 7
 playing = true
 
 [connection signal="timeout" from="Jump Timer" to="." method="_on_Jump_Timer_timeout"]
