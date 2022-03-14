@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=2]
+[gd_scene load_steps=56 format=2]
 
 [ext_resource path="res://srcs/Player Running v1.1.png" type="Texture" id=1]
 [ext_resource path="res://srcs/Player Sword 1.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://srcs/Player Sword 2.png" type="Texture" id=5]
 [ext_resource path="res://srcs/Player Sword 3.png" type="Texture" id=6]
 [ext_resource path="res://scripts/Player.gd" type="Script" id=7]
+[ext_resource path="res://FFFFORWA.TTF" type="DynamicFontData" id=8]
 
 [sub_resource type="AtlasTexture" id=1]
 flags = 4
@@ -80,228 +81,224 @@ region = Rect2( 576, 0, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=15]
 flags = 4
-atlas = ExtResource( 2 )
-region = Rect2( 672, 0, 96, 96 )
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=16]
 flags = 4
-atlas = ExtResource( 2 )
-region = Rect2( 768, 0, 96, 96 )
+atlas = ExtResource( 3 )
+region = Rect2( 96, 0, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=17]
 flags = 4
 atlas = ExtResource( 3 )
-region = Rect2( 0, 0, 96, 96 )
+region = Rect2( 192, 0, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=18]
 flags = 4
 atlas = ExtResource( 3 )
-region = Rect2( 96, 0, 96, 96 )
+region = Rect2( 288, 0, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=19]
 flags = 4
 atlas = ExtResource( 3 )
-region = Rect2( 192, 0, 96, 96 )
+region = Rect2( 384, 0, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=20]
 flags = 4
 atlas = ExtResource( 3 )
-region = Rect2( 288, 0, 96, 96 )
+region = Rect2( 480, 0, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=21]
 flags = 4
-atlas = ExtResource( 3 )
-region = Rect2( 384, 0, 96, 96 )
+atlas = ExtResource( 6 )
+region = Rect2( 0, 0, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=22]
 flags = 4
-atlas = ExtResource( 3 )
-region = Rect2( 480, 0, 96, 96 )
+atlas = ExtResource( 6 )
+region = Rect2( 96, 0, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=23]
 flags = 4
 atlas = ExtResource( 6 )
-region = Rect2( 0, 0, 96, 96 )
+region = Rect2( 192, 0, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=24]
 flags = 4
 atlas = ExtResource( 6 )
-region = Rect2( 96, 0, 96, 96 )
+region = Rect2( 288, 0, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=25]
 flags = 4
 atlas = ExtResource( 6 )
-region = Rect2( 192, 0, 96, 96 )
+region = Rect2( 384, 0, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=26]
 flags = 4
 atlas = ExtResource( 6 )
-region = Rect2( 288, 0, 96, 96 )
+region = Rect2( 0, 96, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=27]
 flags = 4
 atlas = ExtResource( 6 )
-region = Rect2( 384, 0, 96, 96 )
+region = Rect2( 96, 96, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=28]
 flags = 4
 atlas = ExtResource( 6 )
-region = Rect2( 0, 96, 96, 96 )
+region = Rect2( 192, 96, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=29]
 flags = 4
-atlas = ExtResource( 6 )
-region = Rect2( 96, 96, 96, 96 )
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=30]
 flags = 4
-atlas = ExtResource( 6 )
-region = Rect2( 192, 96, 96, 96 )
+atlas = ExtResource( 4 )
+region = Rect2( 96, 0, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=31]
 flags = 4
-atlas = ExtResource( 6 )
-region = Rect2( 288, 96, 96, 96 )
+atlas = ExtResource( 4 )
+region = Rect2( 192, 0, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=32]
 flags = 4
-atlas = ExtResource( 6 )
-region = Rect2( 384, 96, 96, 96 )
+atlas = ExtResource( 4 )
+region = Rect2( 288, 0, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=33]
 flags = 4
 atlas = ExtResource( 4 )
-region = Rect2( 0, 0, 96, 96 )
+region = Rect2( 384, 0, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=34]
 flags = 4
 atlas = ExtResource( 4 )
-region = Rect2( 96, 0, 96, 96 )
+region = Rect2( 480, 0, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=35]
 flags = 4
 atlas = ExtResource( 4 )
-region = Rect2( 192, 0, 96, 96 )
-
-[sub_resource type="AtlasTexture" id=36]
-flags = 4
-atlas = ExtResource( 4 )
-region = Rect2( 288, 0, 96, 96 )
-
-[sub_resource type="AtlasTexture" id=37]
-flags = 4
-atlas = ExtResource( 4 )
-region = Rect2( 384, 0, 96, 96 )
-
-[sub_resource type="AtlasTexture" id=38]
-flags = 4
-atlas = ExtResource( 4 )
-region = Rect2( 480, 0, 96, 96 )
-
-[sub_resource type="AtlasTexture" id=39]
-flags = 4
-atlas = ExtResource( 4 )
 region = Rect2( 576, 0, 96, 96 )
 
-[sub_resource type="AtlasTexture" id=40]
+[sub_resource type="AtlasTexture" id=36]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 0, 0, 96, 96 )
 
-[sub_resource type="AtlasTexture" id=41]
+[sub_resource type="AtlasTexture" id=37]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 96, 0, 96, 96 )
 
-[sub_resource type="AtlasTexture" id=42]
+[sub_resource type="AtlasTexture" id=38]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 192, 0, 96, 96 )
 
-[sub_resource type="AtlasTexture" id=43]
+[sub_resource type="AtlasTexture" id=39]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 288, 0, 96, 96 )
 
-[sub_resource type="AtlasTexture" id=44]
+[sub_resource type="AtlasTexture" id=40]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 384, 0, 96, 96 )
 
-[sub_resource type="AtlasTexture" id=45]
+[sub_resource type="AtlasTexture" id=41]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 0, 96, 96, 96 )
 
-[sub_resource type="AtlasTexture" id=46]
+[sub_resource type="AtlasTexture" id=42]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 96, 96, 96, 96 )
 
-[sub_resource type="AtlasTexture" id=47]
-flags = 4
-atlas = ExtResource( 5 )
-region = Rect2( 192, 96, 96, 96 )
-
-[sub_resource type="AtlasTexture" id=48]
-flags = 4
-atlas = ExtResource( 5 )
-region = Rect2( 288, 96, 96, 96 )
-
-[sub_resource type="AtlasTexture" id=49]
-flags = 4
-atlas = ExtResource( 5 )
-region = Rect2( 384, 96, 96, 96 )
-
-[sub_resource type="SpriteFrames" id=50]
+[sub_resource type="SpriteFrames" id=43]
 animations = [ {
 "frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ) ],
 "loop": true,
 "name": "running",
 "speed": 24.0
 }, {
-"frames": [ SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ) ],
+"frames": [ SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ) ],
 "loop": true,
 "name": "sword_1",
 "speed": 10.0
 }, {
-"frames": [ SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ) ],
+"frames": [ SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ) ],
 "loop": true,
 "name": "jumping",
 "speed": 8.0
 }, {
-"frames": [ SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ) ],
+"frames": [ SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ) ],
 "loop": true,
 "name": "sword_3",
 "speed": 10.0
 }, {
-"frames": [ SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ) ],
+"frames": [ SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ) ],
 "loop": true,
 "name": "dying",
 "speed": 10.0
 }, {
-"frames": [ SubResource( 40 ), SubResource( 41 ), SubResource( 42 ), SubResource( 43 ), SubResource( 44 ), SubResource( 45 ), SubResource( 46 ), SubResource( 47 ), SubResource( 48 ), SubResource( 49 ) ],
+"frames": [ SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ), SubResource( 42 ) ],
 "loop": true,
 "name": "sword_2",
 "speed": 10.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=51]
+[sub_resource type="RectangleShape2D" id=44]
 extents = Vector2( 21.8659, 28.5159 )
 
-[sub_resource type="RectangleShape2D" id=52]
+[sub_resource type="RectangleShape2D" id=45]
 extents = Vector2( 15.5148, 26.4694 )
+
+[sub_resource type="DynamicFont" id=46]
+font_data = ExtResource( 8 )
+
+[sub_resource type="Animation" id=47]
+resource_name = "speed up"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Speed Up!:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Speed Up!:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -47.8723, -65.4456 ), Vector2( -47.872, -100 ), Vector2( -47.872, -65.446 ) ]
+}
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 7 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-frames = SubResource( 50 )
+frames = SubResource( 43 )
 animation = "sword_1"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -1.47864, -1.70873 )
-shape = SubResource( 51 )
+shape = SubResource( 44 )
 
 [node name="Swordbox" type="Area2D" parent="."]
 position = Vector2( 24.4152, 6.97574 )
@@ -309,7 +306,7 @@ position = Vector2( 24.4152, 6.97574 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Swordbox"]
 visible = false
 position = Vector2( 4.50546, -5.85715 )
-shape = SubResource( 52 )
+shape = SubResource( 45 )
 disabled = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -318,6 +315,27 @@ current = true
 limit_left = 0
 limit_smoothed = true
 smoothing_enabled = true
-smoothing_speed = 10.0
+smoothing_speed = 25.0
+
+[node name="Speed Up" type="Timer" parent="."]
+wait_time = 15.0
+autostart = true
+
+[node name="Speed Up!" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -47.872
+margin_top = -100.0
+margin_right = 54.128
+margin_bottom = -78.0
+custom_fonts/font = SubResource( 46 )
+custom_colors/font_color = Color( 0.996078, 0.407843, 0.407843, 1 )
+text = "Speed UP!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+"anims/speed up" = SubResource( 47 )
 
 [connection signal="body_entered" from="Swordbox" to="." method="_on_Swordbox_body_entered"]
+[connection signal="timeout" from="Speed Up" to="." method="_on_Speed_Up_timeout"]

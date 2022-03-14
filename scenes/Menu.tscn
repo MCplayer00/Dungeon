@@ -1,0 +1,277 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://FFFFORWA.TTF" type="DynamicFontData" id=1]
+[ext_resource path="res://srcs/Player Sword 2.png" type="Texture" id=2]
+[ext_resource path="res://srcs/enemys/wizard fly forward.png" type="Texture" id=3]
+[ext_resource path="res://wasd-godot-studio.png" type="Texture" id=4]
+[ext_resource path="res://scripts/Menu.gd" type="Script" id=5]
+[ext_resource path="res://Main Game.tscn" type="PackedScene" id=6]
+
+[sub_resource type="Animation" id=2]
+resource_name = "Ready"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Panel/Wizard:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 412.3, 277.5 ), Vector2( 412.3, 257.5 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Panel/Player:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.6, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 123, 360 ), Vector2( 123, 380 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Panel:rect_position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -1000 ), Vector2( 0, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Panel/Title:rect_position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.6, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 437.626, -1000 ), Vector2( 437.626, -1000 ), Vector2( 437.626, 36.9499 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Panel/Wizard:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.6, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Panel/Player:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.7, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("wasd-godot-studio:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0.02, 0.27 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0.623529, 0.623529, 0.623529, 0 ), Color( 0.623529, 0.623529, 0.623529, 1 ) ]
+}
+
+[sub_resource type="DynamicFont" id=1]
+size = 64
+font_data = ExtResource( 1 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 160, 0, 160, 160 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ SubResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 96, 96 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 96, 0, 96, 96 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 192, 0, 96, 96 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 288, 0, 96, 96 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 384, 0, 96, 96 )
+
+[sub_resource type="SpriteFrames" id=10]
+animations = [ {
+"frames": [ SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0.454902, 0.776471, 0.615686, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.25098, 0.568627, 0.423529, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 0.298039, 0.737255, 0.533333, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="DynamicFont" id=14]
+size = 48
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=16]
+bg_color = Color( 0, 0.705882, 0.847059, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=17]
+bg_color = Color( 0, 0.466667, 0.713726, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 0, 0.588235, 0.780392, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="Menu" type="Node2D"]
+script = ExtResource( 5 )
+PlayButtonScene = ExtResource( 6 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Ready"
+anims/Ready = SubResource( 2 )
+
+[node name="wasd-godot-studio" type="Sprite" parent="."]
+modulate = Color( 0.623529, 0.623529, 0.623529, 1 )
+position = Vector2( 612.168, 352.542 )
+scale = Vector2( 0.801424, 0.801424 )
+texture = ExtResource( 4 )
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 1280.0
+margin_bottom = 722.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="Panel"]
+margin_left = 437.626
+margin_top = 36.9499
+margin_right = 821.64
+margin_bottom = 124.95
+custom_fonts/font = SubResource( 1 )
+text = "DUNGEON"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Wizard" type="AnimatedSprite" parent="Panel"]
+position = Vector2( 412.3, 257.5 )
+scale = Vector2( 2.28843, 2.28843 )
+frames = SubResource( 4 )
+
+[node name="Player" type="AnimatedSprite" parent="Panel"]
+position = Vector2( 123, 380 )
+scale = Vector2( 3.08545, 3.08545 )
+frames = SubResource( 10 )
+frame = 1
+
+[node name="Play Button" type="Button" parent="Panel"]
+margin_left = 679.897
+margin_top = 184.345
+margin_right = 1185.9
+margin_bottom = 323.345
+custom_styles/hover = SubResource( 11 )
+custom_styles/pressed = SubResource( 12 )
+custom_styles/normal = SubResource( 13 )
+custom_fonts/font = SubResource( 14 )
+button_mask = 7
+text = "PLAY"
+
+[node name="Screenshot Button" type="Button" parent="Panel"]
+margin_left = 679.897
+margin_top = 351.36
+margin_right = 1185.9
+margin_bottom = 490.36
+custom_styles/hover = SubResource( 16 )
+custom_styles/pressed = SubResource( 17 )
+custom_styles/normal = SubResource( 15 )
+custom_fonts/font = SubResource( 14 )
+button_mask = 7
+text = "SCREENSHOTS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Settings Button" type="Button" parent="Panel"]
+margin_left = 679.897
+margin_top = 521.164
+margin_right = 1185.9
+margin_bottom = 660.164
+custom_styles/hover = SubResource( 16 )
+custom_styles/pressed = SubResource( 17 )
+custom_styles/normal = SubResource( 15 )
+custom_fonts/font = SubResource( 14 )
+button_mask = 7
+text = "SETTINGS"
+
+[connection signal="pressed" from="Panel/Play Button" to="." method="_on_Play_Button_pressed"]
+[connection signal="pressed" from="Panel/Screenshot Button" to="." method="_on_Screenshot_Button_pressed"]
+[connection signal="pressed" from="Panel/Settings Button" to="." method="_on_Settings_Button_pressed"]

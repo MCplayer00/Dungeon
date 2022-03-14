@@ -127,7 +127,7 @@ scale = Vector2( 11.0648, 13.4477 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 14 )
 animation = "Fire"
-frame = 7
+frame = 1
 playing = true
 
 [connection signal="timeout" from="Jump Timer" to="." method="_on_Jump_Timer_timeout"]

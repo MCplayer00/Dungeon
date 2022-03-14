@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Control",
+"class": "CodeSnapshotInstance",
+"language": "GDScript",
+"path": "res://addons/code-snapshot/Instance/instance.gd"
+} ]
+_global_script_class_icons={
+"CodeSnapshotInstance": ""
+}
+
 [addons]
 
 instance_dock/scenes=[ {
@@ -16,15 +26,16 @@ instance_dock/scenes=[ {
 "scene": "res://scenes/Player.tscn"
 }, {
 "scene": "res://scenes/Fire Enemy.tscn"
-}, {
-"scene": "res://scenes/Mushroom Enemy.tscn"
 } ],
 "scroll": 0
 } ]
 
 [application]
 
-config/name="Gun Runner"
+config/name="Dungeons"
+run/main_scene="res://Main Game.tscn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="Dungeon"
 config/icon="res://icon.png"
 config/gravity=1000
 
@@ -36,6 +47,9 @@ AutoGenerate="*res://AutoGenerate.gd"
 [debug]
 
 settings/crash_handler/message="Opps The Game Crash! Sorry But Pls Report At Godot Engine Github"
+gdscript/warnings/unused_variable=false
+gdscript/warnings/shadowed_variable=false
+gdscript/warnings/return_value_discarded=false
 
 [display]
 
@@ -46,13 +60,22 @@ window/stretch/aspect="keep_width"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/InstanceDock/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/InstanceDock/plugin.cfg", "res://addons/code-snapshot/plugin.cfg" )
 
 [input]
 
-jump={
+ui_select={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":3,"pressure":0.0,"pressed":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777221,"unicode":0,"echo":false,"script":null)
+ ]
+}
+jump={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":87,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777232,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"unicode":0,"echo":false,"script":null)
  ]
 }
 roll={
@@ -62,6 +85,16 @@ roll={
 use_weapon={
 "deadzone": 0.5,
 "events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+reset={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":82,"unicode":0,"echo":false,"script":null)
+ ]
+}
+screenshot={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":true,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"unicode":0,"echo":false,"script":null)
  ]
 }
 

@@ -2,7 +2,7 @@ extends StaticBody2D
 var enemy = preload("res://scenes/Enemy.tscn")
 signal player_go
 func _ready() -> void:
-	if Global.get_random_number(0,1) == 1:
+	if Global.get_random_number(0,3) >= 1:
 		var Enemy_Object = enemy.instance()
 		Enemy_Object.position = $Position2D.position
 		add_child(Enemy_Object)
