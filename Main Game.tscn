@@ -40,17 +40,17 @@ tracks/1/keys = {
 "values": [ Vector2( 350, 233.099 ), Vector2( 350, 233.099 ), Vector2( 600, 233.099 ) ]
 }
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=3]
 size = 32
 font_data = ExtResource( 4 )
 
-[sub_resource type="InputEventKey" id=5]
+[sub_resource type="InputEventKey" id=4]
 scancode = 56
 
-[sub_resource type="ShortCut" id=6]
-shortcut = SubResource( 5 )
+[sub_resource type="ShortCut" id=5]
+shortcut = SubResource( 4 )
 
-[sub_resource type="DynamicFont" id=7]
+[sub_resource type="DynamicFont" id=6]
 size = 28
 font_data = ExtResource( 4 )
 
@@ -103,10 +103,10 @@ margin_top = 572.303
 margin_right = 155.428
 margin_bottom = 704.303
 mouse_filter = 1
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 action_mode = 0
 button_mask = 7
-shortcut = SubResource( 6 )
+shortcut = SubResource( 5 )
 text = "JUMP"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -120,7 +120,7 @@ margin_left = 575.754
 margin_top = 22.0
 margin_right = 680.754
 margin_bottom = 61.0
-custom_fonts/font = SubResource( 7 )
+custom_fonts/font = SubResource( 6 )
 text = "00:00"
 autowrap = true
 __meta__ = {

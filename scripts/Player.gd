@@ -14,7 +14,7 @@ func _ready() -> void:
 func _input(_event: InputEvent) -> void:
 	#Player Jump
 	if Input.is_action_just_pressed("screenshot"):
-		Global.screenshot()
+		FileSystem.make_screenshot()
 	if Input.is_action_just_pressed("jump") or _event.as_text() == "Space":
 			if is_on_floor() and $AnimatedSprite.animation != "dying":
 				$AnimatedSprite.play("jumping")
@@ -40,7 +40,7 @@ func _physics_process(delta: float) -> void:
 func _on_Swordbox_body_entered(body: Node) -> void:
 	if "Enemy" in body.name.capitalize() or body.name == "Bullet":
 		body.take_damage()
-
+		Global.add_point(Global.get_random_number(3,8))
 func die():
 	if not $AnimatedSprite.animation.begins_with("sword_") and has_die == false:
 		$AnimatedSprite.play("dying")
