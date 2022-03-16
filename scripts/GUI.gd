@@ -23,7 +23,6 @@ func _format_time():
 		s_min = str(minute)
 	return s_min + ":" + s_sec
 
-
 func _on_Player_die() -> void:
 	$Timer.stop()
 	$"MB mode/Jump".hide()

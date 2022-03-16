@@ -43,13 +43,15 @@ func _on_Swordbox_body_entered(body: Node) -> void:
 		Global.add_point(Global.get_random_number(3,8))
 func die():
 	if not $AnimatedSprite.animation.begins_with("sword_") and has_die == false:
+		has_die = true
 		$AnimatedSprite.play("dying")
 		speed = 0
 		yield($AnimatedSprite,"animation_finished")
 		emit_signal("die")
 		$AnimatedSprite.stop()
-		has_die = true
+		
 func _on_Speed_Up_timeout() -> void:
+	Global.add_point(15)
 	$AnimationPlayer.play("speed up")
 	speed += 50
 
