@@ -8,7 +8,7 @@ size = 32
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 32
+size = 28
 font_data = ExtResource( 1 )
 
 [sub_resource type="Animation" id=3]
@@ -72,10 +72,10 @@ __meta__ = {
 }
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = 155.774
-margin_top = 147.0
-margin_right = 1143.77
-margin_bottom = 677.0
+margin_left = 189.883
+margin_top = 118.0
+margin_right = 1217.88
+margin_bottom = 648.0
 custom_fonts/normal_font = SubResource( 2 )
 bbcode_enabled = true
 bbcode_text = "[wave]                               THX FOR:[/wave]

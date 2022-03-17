@@ -6,8 +6,8 @@ func _on_Play_Button_pressed() -> void:
 	get_tree().change_scene_to(PlayButtonScene)
 	
 func _on_Screenshot_Button_pressed() -> void:
-	get_tree().change_scene_to(ScreenshotButtonScene)
+	get_parent().add_child(ScreenshotButtonScene.instance())
 	
 
 func _on_Settings_Button_pressed() -> void:
-	get_tree().change_scene_to(SettingsButtonScene)
+	get_parent().add_child(SettingsButtonScene.instance())

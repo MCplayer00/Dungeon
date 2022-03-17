@@ -23,7 +23,7 @@ instance_dock/scenes=[ {
 [application]
 
 config/name="Dungeons"
-run/main_scene="res://Main Game.tscn"
+run/main_scene="res://scenes/Menu.tscn"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="Dungeon"
 config/icon="res://icon.png"

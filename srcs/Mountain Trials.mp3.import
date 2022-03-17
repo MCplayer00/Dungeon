@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Mountain Trials.mp3-10ee8ee79cbd0bb3691c9a3370b7abf2.mp3str"
+
+[deps]
+
+source_file="res://srcs/Mountain Trials.mp3"
+dest_files=[ "res://.import/Mountain Trials.mp3-10ee8ee79cbd0bb3691c9a3370b7abf2.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
