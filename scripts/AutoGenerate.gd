@@ -7,7 +7,12 @@ var levels = [preload("res://scenes/auto generates/Flat.tscn"),preload("res://sc
 func _ready() -> void:
 	if Global.level_seed != 0:
 		rng.seed = Global.level_seed
+<<<<<<< Updated upstream
 else: rng.randomize()
+=======
+	else:
+		rng.randomize()
+>>>>>>> Stashed changes
 	if OS.has_touchscreen_ui_hint():
 		$"GUI/MB mode/Jump".show()
 	generate_level()
