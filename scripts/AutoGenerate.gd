@@ -7,6 +7,7 @@ var levels = [preload("res://scenes/auto generates/Flat.tscn"),preload("res://sc
 func _ready() -> void:
 	if Global.level_seed != 0:
 		rng.seed = Global.level_seed
+        else: rng.randomize()
 	if OS.has_touchscreen_ui_hint():
 		$"GUI/MB mode/Jump".show()
 	else:
